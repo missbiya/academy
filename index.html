@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Miss Biya's Online & Onsite Tuition Academy — Nursery to Graduation (All Subjects). Live classes via WhatsApp, Zoom, Google Meet & Google Classroom. Onsite classes in Chakwal City. Contact: 03219129313." />
+  <meta property="og:title" content="Miss Biya's Online & Onsite Tuition Academy — Nursery to Graduation" />
+  <meta property="og:description" content="Learn Every Subject. Build Confidence. Achieve Excellence! Nursery to Primary (Rs. 1,000/subj), Primary to Matric (Rs. 1,500/subj), Inter to Graduation (Rs. 2,500/subj). Contact Miss Biya: 03219129313." />
+  <meta property="og:type" content="website" />
+  <title>Miss Biya's Online &amp; Onsite Tuition Academy — Nursery to Graduation</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'Segoe UI', 'sans-serif'],
+            display: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif']
+          },
+          colors: {
+            ios: {
+              bg: '#F2F4F8',
+              card: 'rgba(255, 255, 255, 0.86)',
+              blue: '#007AFF',
+              green: '#34C759',
+              whatsapp: '#25D366',
+              indigo: '#5856D6',
+              orange: '#FF9500',
+              pink: '#FF2D55',
+              teal: '#30B0C7'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    :root {
+      --bg-mesh: radial-gradient(at 12% 10%, rgba(52, 199, 89, 0.13) 0px, transparent 48%),
+                 radial-gradient(at 88% 12%, rgba(0, 122, 255, 0.14) 0px, transparent 50%),
+                 radial-gradient(at 50% 55%, rgba(88, 86, 214, 0.08) 0px, transparent 55%),
+                 radial-gradient(at 85% 90%, rgba(48, 176, 199, 0.12) 0px, transparent 50%);
+    }
+    .dark {
+      --bg-mesh: radial-gradient(at 12% 10%, rgba(52, 199, 89, 0.15) 0px, transparent 48%),
+                 radial-gradient(at 88% 12%, rgba(10, 132, 255, 0.18) 0px, transparent 50%),
+                 radial-gradient(at 50% 55%, rgba(94, 92, 230, 0.12) 0px, transparent 55%);
+    }
+    body {
+      background-color: #F2F4F8;
+      background-image: var(--bg-mesh);
+      background-attachment: fixed;
+      -webkit-font-smoothing: antialiased;
+    }
+    .dark body {
+      background-color: #0B0F17;
+    }
+    .ios-glass {
+      background: rgba(255, 255, 255, 0.84);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+    }
+    .dark .ios-glass {
+      background: rgba(24, 32, 48, 0.78);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 12px 32px -6px rgba(0, 0, 0, 0.45);
+    }
+    .ios-nav {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(24px) saturate(190%);
+      -webkit-backdrop-filter: blur(24px) saturate(190%);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+    }
+    .dark .ios-nav {
+      background: rgba(15, 23, 42, 0.8);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .ios-whatsapp-btn {
+      background: linear-gradient(180deg, #38E567 0%, #25D366 48%, #1DA851 100%);
+      box-shadow: 0 10px 24px -4px rgba(37, 211, 102, 0.48), inset 0 1px 1px rgba(255, 255, 255, 0.45);
+      transition: all 0.22s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .ios-whatsapp-btn:hover {
+      transform: translateY(-2px) scale(1.015);
+      box-shadow: 0 14px 28px -4px rgba(37, 211, 102, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.55);
+    }
+    .ios-whatsapp-btn:active {
+      transform: translateY(0px) scale(0.985);
+    }
+    .ios-blue-btn {
+      background: linear-gradient(180deg, #2E90FF 0%, #007AFF 100%);
+      box-shadow: 0 8px 20px -4px rgba(0, 122, 255, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+      transition: all 0.2s ease;
+    }
+    .ios-blue-btn:hover {
+      transform: translateY(-1.5px);
+      box-shadow: 0 12px 24px -4px rgba(0, 122, 255, 0.5);
+    }
+    .ios-pill-shadow {
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+    }
+    .squircle {
+      border-radius: 22%;
+    }
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+    .animate-float {
+      animation: floatSlow 5s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="text-slate-900 dark:text-slate-100 min-h-screen selection:bg-emerald-500 selection:text-white pb-24 md:pb-12">
+
+  <!-- Top Dynamic Island Announcement Bar -->
+  <div class="w-full pt-2.5 px-3 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="bg-slate-900/95 dark:bg-slate-800/95 text-white rounded-full px-4 py-2 flex flex-wrap items-center justify-between gap-2 shadow-lg border border-white/10 text-xs sm:text-sm">
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center justify-center w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+          <span class="font-semibold tracking-wide text-emerald-300">📢 BIG NEWS FOR STUDENTS! 📚🎓</span>
+          <span class="hidden md:inline text-slate-200">— Admissions Open for <strong>Nursery to Graduation (All Subjects)</strong> Online &amp; Onsite!</span>
+        </div>
+        <div class="flex items-center gap-3 ml-auto">
+          <a href="https://whatsapp.com/channel/0029VaizRAC2phHHB5HqNB2t" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold bg-white/15 hover:bg-white/25 px-3 py-1 rounded-full transition">
+            <span>Join Official WhatsApp Channel</span>
+            <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky iOS Frosted Header -->
+  <header class="sticky top-0 z-40 ios-nav mt-2 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+      <!-- Brand Identity -->
+      <a href="#top" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-sky-500 via-blue-600 to-indigo-600 flex items-center justify-center text-white font-display font-extrabold text-sm shadow-md group-hover:scale-105 transition">
+          MB
+        </div>
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="font-display font-extrabold text-base sm:text-lg tracking-tight text-slate-900 dark:text-white">Miss Biya's Academy</span>
+            <span class="hidden sm:inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-300/50">
+              All Subjects
+            </span>
+          </div>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Nursery to Graduation • Online &amp; Onsite</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-1 bg-slate-200/70 dark:bg-slate-800/80 p-1 rounded-full border border-slate-300/50 dark:border-slate-700">
+        <a href="#programs" class="px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 transition">Classes &amp; Subjects</a>
+        <a href="#fees" class="px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 transition">Monthly Fees</a>
+        <a href="#calculator" class="px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 transition">Fee Calculator</a>
+        <a href="#modes" class="px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 transition">Online &amp; Chakwal Onsite</a>
+        <a href="#instructor" class="px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 dark:text-slate-200 hover:bg-white dark:hover:bg-slate-700 transition">Meet Miss Biya</a>
+      </nav>
+
+      <!-- Right Action Buttons -->
+      <div class="flex items-center gap-2">
+        <button id="themeToggleBtn" type="button" aria-label="Toggle theme" class="w-9 h-9 rounded-full bg-slate-200/80 dark:bg-slate-800 flex items-center justify-center text-slate-700 dark:text-slate-200 hover:bg-slate-300/70 dark:hover:bg-slate-700 transition">
+          <i data-lucide="moon" class="w-4 h-4 dark:hidden"></i>
+          <i data-lucide="sun" class="w-4 h-4 hidden dark:block text-amber-400"></i>
+        </button>
+
+        <!-- Iconic Green iOS Button Titled "Whatsapp Us" -->
+        <a href="https://wa.me/message/2CDFXJEFHVRZJ1" target="_blank" rel="noopener noreferrer" class="ios-whatsapp-btn text-white font-semibold text-xs sm:text-sm px-4 py-2 rounded-full inline-flex items-center gap-2">
+          <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.625.846 5.059 2.284 7.033l-1.494 4.462 4.614-1.466c1.912 1.252 4.195 1.971 6.596 1.971 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+          </svg>
+          <span>Whatsapp Us</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="max-w-6xl mx-auto px-4 sm:px-6 pt-6 space-y-10">
+
+    <!-- HERO SECTION (iOS 18 Widget Card Style) -->
+    <section class="ios-glass rounded-[32px] p-6 sm:p-10 relative overflow-hidden">
+      <!-- Subtle decorative glow -->
+      <div class=" -top-24 -right-24 w-72 h-72 bg-emerald-400/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class=" -bottom-24 -left-24 w-72 h-72 bg-blue-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-7 space-y-5">
+          <!-- Status Pill -->
+          <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 dark:bg-emerald-500/20 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-bold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span>🌟 ONLINE &amp; ONSITE ALL-SUBJECTS TUITION ACADEMY 🌟</span>
+          </div>
+
+          <h1 class="font-display font-extrabold text-3xl sm:text-5xl leading-[1.12] tracking-tight text-slate-900 dark:text-white">
+            Nursery to Graduation <br class="hidden sm:inline" />
+            <span class="bg-gradient-to-r from-blue-600 via-indigo-600 to-emerald-600 bg-clip-text text-transparent">All Subjects Tutoring</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl font-medium">
+            <strong>Learn Every Subject. Build Confidence. Achieve Excellence!</strong> Personalized live online classes via <strong>WhatsApp, Zoom, Google Meet &amp; Google Classroom</strong>, plus dedicated <strong>Onsite Classes in Chakwal City &amp; Nearby Areas</strong> — led by <strong>Miss Biya</strong> (BSc Hons, CGPA 3.55 • A+ Academic Record).
+          </p>
+
+          <!-- Key Feature Pills -->
+          <div class="flex flex-wrap gap-2 pt-1">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-slate-700 ios-pill-shadow">
+              <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-500"></i> All Pakistani Boards
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-slate-700 ios-pill-shadow">
+              <i data-lucide="globe" class="w-3.5 h-3.5 text-blue-500"></i> GCSE / O &amp; A-Level Welcome
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-slate-700 ios-pill-shadow">
+              <i data-lucide="users" class="w-3.5 h-3.5 text-indigo-500"></i> Separate Male &amp; Female Batches
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200/80 dark:border-slate-700 ios-pill-shadow">
+              <i data-lucide="video" class="w-3.5 h-3.5 text-rose-500"></i> Daily Recorded Lectures
+            </span>
+          </div>
+
+          <!-- Primary CTA Row: Green Iconic iOS "Whatsapp Us" Button + Call Miss Biya -->
+          <div class="pt-2 flex flex-wrap items-center gap-3.5">
+            <a href="https://wa.me/message/2CDFXJEFHVRZJ1" target="_blank" rel="noopener noreferrer" class="ios-whatsapp-btn text-white font-display font-bold text-base px-7 py-4 rounded-2xl inline-flex items-center gap-3">
+              <span class="w-8 h-8 rounded-xl bg-white/20 flex items-center justify-center">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.625.846 5.059 2.284 7.033l-1.494 4.462 4.614-1.466c1.912 1.252 4.195 1.971 6.596 1.971 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+                </svg>
+              </span>
+              <div class="text-left leading-tight">
+                <div class="text-[11px] uppercase tracking-wider font-semibold text-emerald-50 opacity-90">Instant Direct Chat</div>
+                <div class="text-base font-extrabold">Whatsapp Us</div>
+              </div>
+              <i data-lucide="chevron-right" class="w-5 h-5 ml-1"></i>
+            </a>
+
+            <!-- Miss Biya Direct Number Pill -->
+            <div class="flex items-center gap-2.5 bg-white/90 dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 rounded-2xl px-4 py-3 shadow-sm">
+              <div class="w-9 h-9 rounded-xl bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                <i data-lucide="phone-call" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <div class="text-[11px] font-semibold text-slate-500 dark:text-slate-400">Miss Biya • Contact / WhatsApp</div>
+                <div class="flex items-center gap-2">
+                  <a href="tel:03219129313" class="font-display font-bold text-sm sm:text-base text-slate-900 dark:text-white hover:text-blue-600 transition">03219129313</a>
+                  <button type="button" data-copy="03219129313" class="copy-btn text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 hover:bg-blue-100 px-2 py-0.5 rounded-md transition" title="Copy Phone Number">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Fee Preview Strip -->
+          <div class="grid grid-cols-3 gap-2.5 pt-2">
+            <div class="bg-white/80 dark:bg-slate-800/70 rounded-2xl p-3 border border-slate-200/70 dark:border-slate-700/70">
+              <div class="text-[11px] font-semibold text-slate-500 dark:text-slate-400">Nursery to Primary</div>
+              <div class="font-display font-extrabold text-sm sm:text-base text-slate-900 dark:text-white mt-0.5">Rs. 1,000 <span class="text-[11px] font-medium text-slate-500">/subj</span></div>
+            </div>
+            <div class="bg-white/80 dark:bg-slate-800/70 rounded-2xl p-3 border border-slate-200/70 dark:border-slate-700/70">
+              <div class="text-[11px] font-semibold text-slate-500 dark:text-slate-400">Primary to Matric</div>
+              <div class="font-display font-extrabold text-sm sm:text-base text-blue-600 dark:text-blue-400 mt-0.5">Rs. 1,500 <span class="text-[11px] font-medium text-slate-500">/subj</span></div>
+            </div>
+            <div class="bg-white/80 dark:bg-slate-800/70 rounded-2xl p-3 border border-slate-200/70 dark:border-slate-700/70">
+              <div class="text-[11px] font-semibold text-slate-500 dark:text-slate-400">Inter to Graduation</div>
+              <div class="font-display font-extrabold text-sm sm:text-base text-indigo-600 dark:text-indigo-400 mt-0.5">Rs. 2,500 <span class="text-[11px] font-medium text-slate-500">/subj</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual (iOS Framed Illustration + Floating Widgets) -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-[28px] overflow-hidden border-2 border-white/80 dark:border-slate-700 shadow-2xl bg-gradient-to-br from-emerald-50 via-sky-50 to-indigo-50 dark:from-slate-800 dark:to-slate-900">
+            <img src="data:image/jpeg;base64,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" alt="Miss Biya Online and Onsite Tuition Academy iOS Illustration" class="w-full h-auto object-cover max-w-full" />
+            <div class=" inset-0 bg-gradient-to-t from-slate-900/65 via-transparent to-transparent flex items-end p-4 sm:p-5">
+              <div class="w-full bg-white/90 dark:bg-slate-900/90 backdrop-blur-md rounded-2xl p-3.5 border border-white/60 dark:border-slate-700 flex items-center justify-between gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center font-bold shadow">
+                    <i data-lucide="sparkles" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <div class="text-xs font-extrabold text-slate-900 dark:text-white">Your Class, Your Time, Your Choice!</div>
+                    <div class="text-[11px] text-slate-600 dark:text-slate-300">Quality Education Within Your Reach</div>
+                  </div>
+                </div>
+                <a href="#calculator" class="px-3 py-1.5 rounded-xl bg-blue-600 text-white text-xs font-bold hover:bg-blue-700 transition shrink-0">
+                  Plan Fee
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFICIAL WHATSAPP CHANNEL BANNER (iOS Notification Widget Style) -->
+    <section class="ios-glass rounded-[28px] p-5 sm:p-6 border-l-4 border-l-emerald-500">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div class="flex items-start sm:items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-400 to-green-600 text-white flex items-center justify-center shadow-md shrink-0">
+            <i data-lucide="megaphone" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+              <span>📢 Official Community Updates</span>
+            </div>
+            <h2 class="font-display font-bold text-lg sm:text-xl text-slate-900 dark:text-white mt-0.5">
+              Join Our Official WhatsApp Channel!
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-0.5">
+              Get the latest updates, special offers, free trial announcements, exam tips, and educational content directly on WhatsApp.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-2.5 w-full md:w-auto justify-end">
+          <a href="https://whatsapp.com/channel/0029VaizRAC2phHHB5HqNB2t" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center ios-blue-btn text-white font-semibold text-xs sm:text-sm px-5 py-3 rounded-2xl inline-flex items-center justify-center gap-2">
+            <i data-lucide="radio" class="w-4 h-4"></i>
+            <span>Join Official WhatsApp Channel</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEET MISS BIYA — SHORT INTRO SUMMARY & CV HIGHLIGHTS (Strictly named Miss Biya) -->
+    <section id="instructor" class="ios-glass rounded-[32px] p-6 sm:p-9 space-y-6">
+      <!-- Top Status Pill matching her CV -->
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 dark:bg-emerald-500/20 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-semibold">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          <span>Available for Teaching, Science &amp; Lab Instruction &amp; Online Academy Management</span>
+        </div>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-500/10 text-blue-700 dark:text-blue-300 border border-blue-400/30">
+          <i data-lucide="award" class="w-3.5 h-3.5"></i> CGPA: 3.55 • A+ Academic Record
+        </span>
+      </div>
+
+      <!-- Instructor Header & Contact Grid (Styled like CV Page 1) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        <!-- Left Profile Card -->
+        <div class="lg:col-span-5 bg-white/90 dark:bg-slate-800/90 rounded-[26px] p-6 border border-slate-200/80 dark:border-slate-700 shadow-sm space-y-5">
+          <div class="flex items-center gap-4">
+            <div class="w-20 h-20 rounded-[22px] bg-gradient-to-br from-sky-500 via-blue-600 to-teal-500 text-white flex items-center justify-center font-display font-extrabold text-2xl shadow-lg shrink-0">
+              MB
+            </div>
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Lead Instructor &amp; Founder</span>
+              <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 dark:text-white">Miss Biya</h2>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">BSc (Hons) Food Science &amp; Technology</p>
+            </div>
+          </div>
+
+          <!-- Role Badges from CV -->
+          <div class="flex flex-wrap gap-1.5">
+            <span class="px-3 py-1 rounded-full text-[11px] font-bold bg-sky-50 dark:bg-sky-950/70 text-sky-700 dark:text-sky-300 border border-sky-200 dark:border-sky-800">
+              MULTI-SUBJECT EDUCATOR
+            </span>
+            <span class="px-3 py-1 rounded-full text-[11px] font-bold bg-emerald-50 dark:bg-emerald-950/70 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+              SCIENCE &amp; LAB INSTRUCTOR
+            </span>
+            <span class="px-3 py-1 rounded-full text-[11px] font-bold bg-indigo-50 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800">
+              ONLINE ACADEMY MANAGER
+            </span>
+          </div>
+
+          <!-- 4 iOS Info Widgets from CV -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+            <div class="p-3 rounded-2xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200/70 dark:border-slate-700/70 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+              </div>
+              <div class="min-w-0">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">WhatsApp / Phone</div>
+                <a href="tel:03219129313" class="text-xs font-bold text-slate-900 dark:text-white truncate block hover:text-emerald-600">03219129313</a>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-2xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200/70 dark:border-slate-700/70 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-blue-500 text-white flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </div>
+              <div class="min-w-0">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Email Address</div>
+                <a href="mailto:optimistix.girl@gmail.com" class="text-xs font-bold text-slate-900 dark:text-white truncate block hover:text-blue-600">optimistix.girl@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-2xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200/70 dark:border-slate-700/70 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-indigo-500 text-white flex items-center justify-center shrink-0">
+                <i data-lucide="landmark" class="w-4 h-4"></i>
+              </div>
+              <div class="min-w-0">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Onsite Classes</div>
+                <div class="text-xs font-bold text-slate-900 dark:text-white truncate">Chakwal, Punjab</div>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-2xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200/70 dark:border-slate-700/70 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+              </div>
+              <div class="min-w-0">
+                <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Locations</div>
+                <div class="text-xs font-bold text-slate-900 dark:text-white truncate">Chakwal • RWP / ISB</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct WhatsApp CTA inside Profile -->
+          <a href="https://wa.me/message/2CDFXJEFHVRZJ1" target="_blank" rel="noopener noreferrer" class="w-full ios-whatsapp-btn text-white font-bold text-sm py-3.5 px-4 rounded-2xl flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Whatsapp Us — Chat with Miss Biya</span>
+          </a>
+        </div>
+
+        <!-- Right Column: Short Intro Summary + Interactive CV Tabs -->
+        <div class="lg:col-span-7 space-y-4">
+          <!-- iOS Segmented Tab Switcher for Miss Biya's Profile -->
+          <div class="bg-slate-200/75 dark:bg-slate-800/90 p-1.5 rounded-2xl flex flex-wrap gap-1">
+            <button type="button" data-bio-tab="summary" class="bio-tab-btn flex-1 min-w-[120px] py-2 px-3 rounded-xl text-xs font-bold bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-sm transition">
+              ✨ Intro Summary
+            </button>
+            <button type="button" data-bio-tab="education" class="bio-tab-btn flex-1 min-w-[120px] py-2 px-3 rounded-xl text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-slate-900 transition">
+              🎓 Education (A+)
+            </button>
+            <button type="button" data-bio-tab="experience" class="bio-tab-btn flex-1 min-w-[120px] py-2 px-3 rounded-xl text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-slate-900 transition">
+              💼 Teaching &amp; Lab
+            </button>
+            <button type="button" data-bio-tab="skills" class="bio-tab-btn flex-1 min-w-[120px] py-2 px-3 rounded-xl text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-slate-900 transition">
+              🎯 Core Skills
+            </button>
+          </div>
+
+          <!-- TAB 1: Short Intro Summary (Default Visible) -->
+          <div id="bio-panel-summary" class="bio-panel bg-white/90 dark:bg-slate-800/90 rounded-[26px] p-6 border border-slate-200/80 dark:border-slate-700 shadow-sm space-y-4">
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2.5">
+                <span class="w-8 h-8 rounded-xl bg-amber-500/15 text-amber-600 dark:text-amber-400 flex items-center justify-center">
+                  <i data-lucide="sparkles" class="w-4 h-4"></i>
+                </span>
+                <h3 class="font-display font-extrabold text-lg text-slate-900 dark:text-white">Professional Summary — Miss Biya</h3>
+              </div>
+              <span class="text-[11px] font-semibold px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">
+                Nursery to Graduation
+              </span>
+            </div>
+
+            <p class="text-sm sm:text-[15px] text-slate-700 dark:text-slate-200 leading-relaxed">
+              <strong>Miss Biya</strong> is a <strong>Food Science and Technology graduate (CGPA: 3.55)</strong> with an <strong>A+ academic record</strong> in both <strong>F.Sc Pre-Engineering</strong> and <strong>Matriculation</strong>, combined with extensive experience in <strong>online academy management (2023–2026)</strong> and active multi-subject teaching from <strong>Nursery to Graduation</strong> levels.
+            </p>
+            <p class="text-sm sm:text-[15px] text-slate-700 dark:text-slate-200 leading-relaxed">
+              She is highly skilled in explaining complex academic concepts according to students' grade levels, learning needs, and individual abilities — preparing structured lessons, organizing study activities, and assisting with <strong>homework, assignments, revision, test preparation, and board examination practice</strong>. Equipped with strong practical exposure to laboratory testing, physicochemical analysis, and scientific documentation from <strong>NARC/FSRI</strong>, <strong>Dawn Bread</strong>, and <strong>PMAS Arid Agriculture University</strong> laboratories, she brings real-world clarity to every subject she teaches.
+            </p>
+
+            <!-- Quick Highlight Counters -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2">
+              <div class="p-3 rounded-2xl bg-sky-50/80 dark:bg-sky-950/40 border border-sky-200/60 dark:border-sky-800/60 text-center">
+                <div class="font-display font-extrabold text-lg text-sky-700 dark:text-sky-300">3.55 CGPA</div>
+                <div class="text-[11px] font-medium text-slate-600 dark:text-slate-400">BSc (Hons) 2026</div>
+              </div>
+              <div class="p-3 rounded-2xl bg-emerald-50/80 dark:bg-emerald-950/40 border border-emerald-200/60 dark:border-emerald-800/60 text-center">
+                <div class="font-display font-extrabold text-lg text-emerald-700 dark:text-emerald-300">Grade A+</div>
+                <div class="text-[11px] font-medium text-slate-600 dark:text-slate-400">F.Sc &amp; Matric</div>
+              </div>
+              <div class="p-3 rounded-2xl bg-indigo-50/80 dark:bg-indigo-950/40 border border-indigo-200/60 dark:border-indigo-800/60 text-center">
+                <div class="font-display font-extrabold text-lg text-indigo-700 dark:text-indigo-300">3+ Years</div>
+                <div class="text-[11px] font-medium text-slate-600 dark:text-slate-400">Academy Management</div>
+              </div>
+              <div class="p-3 rounded-2xl bg-amber-50/80 dark:bg-amber-950/40 border border-amber-200/60 dark:border-amber-800/60 text-center">
+                <div class="font-display font-extrabold text-lg text-amber-700 dark:text-amber-300">All Subjects</div>
+                <div class="text-[11px] font-medium text-slate-600 dark:text-slate-400">Nursery – Graduation</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 2: Education & Academic Excellence -->
+          <div id="bio-panel-education" class="bio-panel hidden bg-white/90 dark:bg-slate-800/90 rounded-[26px] p-6 border border-slate-200/80 dark:border-slate-700 shadow-sm space-y-3.5">
+            <h3 class="font-display font-extrabold text-lg text-slate-900 dark:text-white flex items-center gap-2">
+              <i data-lucide="graduation-cap" class="w-5 h-5 text-blue-600"></i> Academic Qualifications
+            </h3>
+            <div class="space-y-3">
+              <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200/70 dark:border-slate-700 flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <div class="font-display font-bold text-sm sm:text-base text-slate-900 dark:text-white">BSc (Hons) Food Science &amp; Technology</div>
+                  <div class="text-xs text-slate-600 dark:text-slate-400">Pir Mehr Ali Shah Arid Agriculture University, Rawalpindi • 2026</div>
+                </div>
+                <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">CGPA: 3.55</span>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200/70 dark:border-slate-700 flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <div class="font-display font-bold text-sm sm:text-base text-slate-900 dark:text-white">F.Sc Pre-Engineering</div>
+                  <div class="text-xs text-slate-600 dark:text-slate-400">Punjab College for Women, Mandi Town, Bhakkar</div>
+                </div>
+                <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">Grade A+</span>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200/70 dark:border-slate-700 flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <div class="font-display font-bold text-sm sm:text-base text-slate-900 dark:text-white">Matriculation (Science)</div>
+                  <div class="text-xs text-slate-600 dark:text-slate-400">Punjab Public Girls High School, Bhakkar</div>
+                </div>
+                <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">Grade A+</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 3: Teaching & Lab Experience -->
+          <div id="bio-panel-experience" class="bio-panel hidden bg-white/90 dark:bg-slate-800/90 rounded-[26px] p-6 border border-slate-200/80 dark:border-slate-700 shadow-sm space-y-3.5">
+            <h3 class="font-display font-extrabold text-lg text-slate-900 dark:text-white flex items-center gap-2">
+              <i data-lucide="briefcase" class="w-5 h-5 text-indigo-600"></i> Teaching &amp; Scientific Experience
+            </h3>
+            <div class="space-y-3 text-xs sm:text-sm">
+              <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200/70 dark:border-slate-700">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-bold text-slate-900 dark:text-white">Online Academy Management — Noor Muslim Academy</span>
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300">2023 – 2026</span>
+                </div>
+                <p class="text-slate-600 dark:text-slate-300 mt-1">Managed end-to-end online academy operations, virtual class schedules, student-teacher coordination, social media enrollment outreach, and supervised structured online instructional delivery.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200/70 dark:border-slate-700">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-bold text-slate-900 dark:text-white">Multi-Subject Home &amp; Online Tutor</span>
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">2026 – Present</span>
+                </div>
+                <p class="text-slate-600 dark:text-slate-300 mt-1">Providing personalized online and onsite tutoring from Nursery to Graduation across all subjects, with tailored lesson plans, homework/assignment support, and board exam practice.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200/70 dark:border-slate-700">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="font-bold text-slate-900 dark:text-white">Laboratory &amp; Quality Assurance Placements</span>
+                  <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-300">NARC • Dawn Bread • PMAS-AAUR</span>
+                </div>
+                <p class="text-slate-600 dark:text-slate-300 mt-1">Hands-on scientific testing at National Agriculture Research Centre (FSRI), Dawn Bread Islamabad, and university food-analysis labs (physicochemical testing, spectrophotometry, GLP/GHP &amp; ISO 22000).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB 4: Core Skills & Languages -->
+          <div id="bio-panel-skills" class="bio-panel hidden bg-white/90 dark:bg-slate-800/90 rounded-[26px] p-6 border border-slate-200/80 dark:border-slate-700 shadow-sm space-y-4">
+            <h3 class="font-display font-extrabold text-lg text-slate-900 dark:text-white flex items-center gap-2">
+              <i data-lucide="check-Check" class="w-5 h-5 text-emerald-600"></i> Core Teaching &amp; Academic Competencies
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">• Multi-Subject Tutoring (Nursery to Graduation)</span>
+              <span class="px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">• Concept Explanation &amp; Progress Monitoring</span>
+              <span class="px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">• Lesson Planning &amp; Study Activity Organization</span>
+              <span class="px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">• Homework, Assignment &amp; Revision Support</span>
+              <span class="px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">• Test Preparation &amp; Board Exam Practice</span>
+              <span class="px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">• Online Academy Management &amp; Coordination</span>
+              <span class="px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">• Science &amp; Lab Instruction (GLP/GHP)</span>
+              <span class="px-3 py-1.5 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">• Strong Communication, Patience &amp; Time Management</span>
+            </div>
+            <div class="pt-2 border-t border-slate-200/70 dark:border-slate-700 flex flex-wrap items-center gap-2">
+              <span class="text-xs font-bold text-slate-500 uppercase tracking-wider mr-1">Languages Spoken:</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800">English</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">Urdu</span>
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800">Local Language</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UPDATED MONTHLY FEE STRUCTURE SECTION (Per Subject Tiers + Recorded Lectures) -->
+    <section id="fees" class="space-y-5">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
+          💰 AFFORDABLE MONTHLY FEE STRUCTURE
+        </span>
+        <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-slate-900 dark:text-white">
+          Transparent Per-Subject Monthly Fees
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300">
+          Quality education from <strong>Nursery to Graduation (All Subjects)</strong> within your reach. All Pakistani Boards as well as GCSE / O-Level &amp; A-Level students are welcome!
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Tier 1: Nursery to Primary -->
+        <div class="ios-glass rounded-[30px] p-6 sm:p-7 flex flex-col justify-between relative border-t-4 border-t-emerald-500 hover:-translate-y-1 transition duration-200">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">Foundation Level</span>
+              <div class="w-10 h-10 rounded-2xl bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+                <i data-lucide="book-open" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-display font-extrabold text-xl text-slate-900 dark:text-white">Nursery to Primary</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Playgroup, Nursery, Prep &amp; Classes 1 to 5</p>
+            </div>
+            <div class="pt-2 pb-3 border-b border-slate-200/80 dark:border-slate-700/80">
+              <div class="flex items-baseline gap-1">
+                <span class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 dark:text-white">Rs. 1,000</span>
+                <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">/ month per subject</span>
+              </div>
+            </div>
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>All Subjects (English, Math, Urdu, Science, Islamiat, Computer)</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Phonics, Reading, Writing &amp; Concept Building</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Daily Homework &amp; Worksheet Assistance</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Live Online or Chakwal Onsite Classes</span></li>
+            </ul>
+          </div>
+          <div class="pt-6">
+            <button type="button" data-select-tier="nursery_primary" class="tier-select-btn w-full py-3 px-4 rounded-2xl font-bold text-xs sm:text-sm bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition flex items-center justify-center gap-2">
+              <span>Select in Fee Calculator</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tier 2: Primary to Matric (Highlighted Popular Tier) -->
+        <div class="ios-glass rounded-[30px] p-6 sm:p-7 flex flex-col justify-between relative border-2 border-blue-500 shadow-xl hover:-translate-y-1 transition duration-200">
+          <div class=" -top-3.5 right-6 px-3 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-blue-600 text-white shadow">
+            Most Popular • Board Prep
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300">Middle &amp; Matric (SSC)</span>
+              <div class="w-10 h-10 rounded-2xl bg-blue-500/15 text-blue-600 dark:text-blue-400 flex items-center justify-center">
+                <i data-lucide="calculator" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-display font-extrabold text-xl text-slate-900 dark:text-white">Primary to Matric</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Classes 6th, 7th, 8th, 9th &amp; 10th + O-Level / GCSE</p>
+            </div>
+            <div class="pt-2 pb-3 border-b border-slate-200/80 dark:border-slate-700/80">
+              <div class="flex items-baseline gap-1">
+                <span class="font-display font-extrabold text-3xl sm:text-4xl text-blue-600 dark:text-blue-400">Rs. 1,500</span>
+                <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">/ month per subject</span>
+              </div>
+            </div>
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-500 shrink-0"></i><span>Mathematics, Physics, Chemistry, Biology &amp; Computer</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-500 shrink-0"></i><span>English, Urdu, Pak Studies &amp; Islamiat</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-500 shrink-0"></i><span>All Pakistani Boards &amp; GCSE / O-Level Past Papers</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-500 shrink-0"></i><span>Weekly Tests, Revision &amp; Separate Male/Female Batches</span></li>
+            </ul>
+          </div>
+          <div class="pt-6">
+            <button type="button" data-select-tier="primary_matric" class="tier-select-btn w-full py-3 px-4 rounded-2xl font-bold text-xs sm:text-sm ios-blue-btn text-white transition flex items-center justify-center gap-2">
+              <span>Select in Fee Calculator</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tier 3: Inter to Graduation -->
+        <div class="ios-glass rounded-[30px] p-6 sm:p-7 flex flex-col justify-between relative border-t-4 border-t-indigo-500 hover:-translate-y-1 transition duration-200">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-indigo-100 text-indigo-800 dark:bg-indigo-950 dark:text-indigo-300">College &amp; University</span>
+              <div class="w-10 h-10 rounded-2xl bg-indigo-500/15 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+                <i data-lucide="microscope" class="w-5 h-5"></i>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-display font-extrabold text-xl text-slate-900 dark:text-white">Inter to Graduation</h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">11th &amp; 12th (F.Sc / ICS / FA), A-Level &amp; BSc / BS Graduation</p>
+            </div>
+            <div class="pt-2 pb-3 border-b border-slate-200/80 dark:border-slate-700/80">
+              <div class="flex items-baseline gap-1">
+                <span class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 dark:text-white">Rs. 2,500</span>
+                <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">/ month per subject</span>
+              </div>
+            </div>
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-500 shrink-0"></i><span>F.Sc Pre-Engineering &amp; Pre-Medical, ICS, I.Com, FA &amp; A-Level</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-500 shrink-0"></i><span>BSc / BS Graduation Subjects, Sciences &amp; Food Science</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-500 shrink-0"></i><span>In-Depth Concept Clarity, Numericals &amp; Lab/Report Guidance</span></li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-500 shrink-0"></i><span>Semester Exam, Board Exam &amp; Assignment Preparation</span></li>
+            </ul>
+          </div>
+          <div class="pt-6">
+            <button type="button" data-select-tier="inter_grad" class="tier-select-btn w-full py-3 px-4 rounded-2xl font-bold text-xs sm:text-sm bg-indigo-600 hover:bg-indigo-700 text-white shadow-md transition flex items-center justify-center gap-2">
+              <span>Select in Fee Calculator</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recorded Lectures Service Add-on Card -->
+      <div class="ios-glass rounded-[26px] p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-rose-500/15 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0">
+            <i data-lucide="video" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="flex flex-wrap items-center gap-2">
+              <h3 class="font-display font-bold text-base sm:text-lg text-slate-900 dark:text-white">🎥 Daily Recorded Lectures Service (All Classes)</h3>
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-extrabold bg-rose-100 text-rose-700 dark:bg-rose-950 dark:text-rose-300">Rs. 3,000 / month</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-0.5">
+              Never miss a concept! Access daily recorded video lectures anytime for revision and exam preparation at your own pace.
+            </p>
+          </div>
+        </div>
+        <a href="https://wa.me/message/2CDFXJEFHVRZJ1" target="_blank" rel="noopener noreferrer" class="ios-whatsapp-btn text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-2xl inline-flex items-center gap-2 shrink-0">
+          <span>Whatsapp Us</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE iOS FEE CALCULATOR & SUBJECT EXPLORER -->
+    <section id="calculator" class="ios-glass rounded-[32px] p-6 sm:p-9 space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-slate-200/80 dark:border-slate-700/80 pb-5">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Interactive iOS Planner</span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 dark:text-white mt-0.5">
+            Calculate Your Monthly Tuition Fee
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+            Pick your grade level, tap the subjects you want to study, and choose Live Online or Chakwal Onsite mode.
+          </p>
+        </div>
+        <button id="resetCalcBtn" type="button" class="self-start md:self-auto px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-200/80 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-300 transition inline-flex items-center gap-1.5">
+          <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> Reset Selection
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Left Controls -->
+        <div class="lg:col-span-7 space-y-6">
+          <!-- Step 1: Select Level -->
+          <div class="space-y-2.5">
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+              1. Select Class / Grade Level
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5" id="calcTierGroup">
+              <button type="button" data-tier="nursery_primary" class="calc-tier-btn p-3.5 rounded-2xl border text-left transition bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700">
+                <div class="text-xs font-bold text-slate-900 dark:text-white">Nursery to Primary</div>
+                <div class="text-sm font-extrabold text-emerald-600 dark:text-emerald-400 mt-0.5">Rs. 1,000 / subject</div>
+              </button>
+              <button type="button" data-tier="primary_matric" class="calc-tier-btn p-3.5 rounded-2xl border-2 text-left transition bg-blue-50/80 dark:bg-blue-950/50 border-blue-500">
+                <div class="text-xs font-bold text-slate-900 dark:text-white">Primary to Matric</div>
+                <div class="text-sm font-extrabold text-blue-600 dark:text-blue-400 mt-0.5">Rs. 1,500 / subject</div>
+              </button>
+              <button type="button" data-tier="inter_grad" class="calc-tier-btn p-3.5 rounded-2xl border text-left transition bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700">
+                <div class="text-xs font-bold text-slate-900 dark:text-white">Inter to Graduation</div>
+                <div class="text-sm font-extrabold text-indigo-600 dark:text-indigo-400 mt-0.5">Rs. 2,500 / subject</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Tap Subjects to Enroll -->
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between">
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                2. Select Subjects (Tap to Toggle)
+              </label>
+              <span id="selectedSubjectsCountBadge" class="text-xs font-bold text-blue-600 dark:text-blue-400">2 subjects selected</span>
+            </div>
+            <div id="subjectChipsContainer" class="flex flex-wrap gap-2">
+              <!-- Populated dynamically by JS -->
+            </div>
+          </div>
+
+          <!-- Step 3: Class Mode & Platform -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="space-y-2">
+              <label for="classModeSelect" class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                3. Class Mode &amp; Platform
+              </label>
+              <select id="classModeSelect" class="w-full rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-3.5 py-2.5 text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="Live Online (Zoom / Google Meet)">Live Online — Zoom / Google Meet</option>
+                <option value="Live Online (WhatsApp Video / Google Classroom)">Live Online — WhatsApp / Google Classroom</option>
+                <option value="Onsite Class (Chakwal City & Nearby Areas Only)">Onsite — Chakwal City &amp; Nearby Areas Only</option>
+              </select>
+            </div>
+
+            <div class="space-y-2">
+              <label for="batchTypeSelect" class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                4. Student Batch Preference
+              </label>
+              <select id="batchTypeSelect" class="w-full rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-3.5 py-2.5 text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="Female Students Separate Batch">Female Students Separate Batch</option>
+                <option value="Male Students Separate Batch">Male Students Separate Batch</option>
+                <option value="1-on-1 Individual Attention">1-on-1 Individual Guidance</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Optional Recorded Lectures Service Switch -->
+          <div class="p-4 rounded-2xl bg-white/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex items-center justify-between gap-4">
+            <div>
+              <div class="font-bold text-xs sm:text-sm text-slate-900 dark:text-white">Include Full Recorded Lectures Service Package?</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Optional all-classes recorded lecture archive (+Rs. 3,000/month)</div>
+            </div>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" id="recordedServiceToggle" class="sr-only peer">
+              <div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer dark:bg-slate-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-500"></div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Right Receipt / Summary Card -->
+        <div class="lg:col-span-5 bg-white dark:bg-slate-800/95 rounded-[28px] p-6 border border-slate-200/90 dark:border-slate-700 shadow-lg space-y-5">
+          <div class="flex items-center justify-between border-b border-slate-100 dark:border-slate-700 pb-4">
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Monthly Fee Summary</span>
+              <h3 id="summaryTierTitle" class="font-display font-extrabold text-lg text-slate-900 dark:text-white">Primary to Matric</h3>
+            </div>
+            <div class="w-10 h-10 rounded-2xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center">
+              <i data-lucide="receipt" class="w-5 h-5"></i>
+            </div>
+          </div>
+
+          <div class="space-y-3 text-xs sm:text-sm">
+            <div class="flex justify-between items-center">
+              <span class="text-slate-500 dark:text-slate-400">Per-Subject Rate:</span>
+              <span id="summaryRateText" class="font-bold text-slate-900 dark:text-white">Rs. 1,500 / month</span>
+            </div>
+            <div class="flex justify-between items-start gap-4">
+              <span class="text-slate-500 dark:text-slate-400 shrink-0">Selected Subjects:</span>
+              <span id="summarySubjectsList" class="font-semibold text-right text-slate-800 dark:text-slate-200">Mathematics, English</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-slate-500 dark:text-slate-400">Class Mode:</span>
+              <span id="summaryModeText" class="font-semibold text-slate-800 dark:text-slate-200 text-right">Live Online — Zoom / Google Meet</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-slate-500 dark:text-slate-400">Batch Type:</span>
+              <span id="summaryBatchText" class="font-semibold text-slate-800 dark:text-slate-200 text-right">Female Students Separate Batch</span>
+            </div>
+            <div id="summaryRecordedRow" class="hidden justify-between items-center text-rose-600 dark:text-rose-400">
+              <span>Recorded Lectures Package:</span>
+              <span class="font-bold">+ Rs. 3,000 / mo</span>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200/80 dark:border-slate-700 flex items-center justify-between">
+            <div>
+              <div class="text-xs font-bold text-slate-500 dark:text-slate-400">Estimated Monthly Total</div>
+              <div class="text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold">Includes Individual Attention &amp; Tests</div>
+            </div>
+            <div id="summaryTotalAmount" class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 dark:text-white">
+              Rs. 3,000
+            </div>
+          </div>
+
+          <div class="space-y-2.5 pt-1">
+            <!-- Green Iconic iOS Button -->
+            <a href="https://wa.me/message/2CDFXJEFHVRZJ1" target="_blank" rel="noopener noreferrer" class="w-full ios-whatsapp-btn text-white font-display font-bold text-sm sm:text-base py-3.5 px-5 rounded-2xl flex items-center justify-center gap-2.5">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.625.846 5.059 2.284 7.033l-1.494 4.462 4.614-1.466c1.912 1.252 4.195 1.971 6.596 1.971 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+              </svg>
+              <span>Whatsapp Us to Enroll</span>
+            </a>
+
+            <button id="copySummaryBtn" type="button" class="w-full py-2.5 px-4 rounded-2xl text-xs font-bold bg-slate-100 dark:bg-slate-700/80 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition flex items-center justify-center gap-2">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              <span>Copy Enrollment Summary for Miss Biya (03219129313)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALL SUBJECTS & CLASSES DIRECTORY (Nursery to Graduation) -->
+    <section id="programs" class="ios-glass rounded-[32px] p-6 sm:p-9 space-y-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">📖 Admissions Open • All Pakistani Boards &amp; Cambridge</span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 dark:text-white mt-0.5">
+            All Subjects Covered — Nursery to Graduation
+          </h2>
+        </div>
+        <!-- Level Filter Buttons -->
+        <div class="flex flex-wrap gap-1.5 bg-slate-200/75 dark:bg-slate-800 p-1.5 rounded-2xl">
+          <button type="button" data-prog-filter="all" class="prog-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-slate-700 text-slate-900 dark:text-white shadow-sm transition">All Levels</button>
+          <button type="button" data-prog-filter="nursery" class="prog-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold text-slate-600 dark:text-slate-300 transition">Nursery – Primary</button>
+          <button type="button" data-prog-filter="matric" class="prog-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold text-slate-600 dark:text-slate-300 transition">Primary – Matric</button>
+          <button type="button" data-prog-filter="inter" class="prog-filter-btn px-3 py-1.5 rounded-xl text-xs font-bold text-slate-600 dark:text-slate-300 transition">Inter – Graduation</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="programsGrid">
+        <!-- Card 1 -->
+        <div data-prog-cat="nursery" class="program-card bg-white/90 dark:bg-slate-800/90 rounded-[24px] p-5 border border-slate-200/80 dark:border-slate-700 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">Rs. 1,000 / Subject</span>
+            <span class="text-xs font-semibold text-slate-500">Playgroup, Nursery, Prep &amp; Grades 1–5</span>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">Nursery to Primary (All Subjects)</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+            Strong foundational tutoring in English, Urdu, Mathematics, General Science, Social Studies, Computer, Islamiat, Phonics, and Daily School Homework Support.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div data-prog-cat="matric" class="program-card bg-white/90 dark:bg-slate-800/90 rounded-[24px] p-5 border border-slate-200/80 dark:border-slate-700 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300">Rs. 1,500 / Subject</span>
+            <span class="text-xs font-semibold text-slate-500">Grades 6–8 &amp; 9th–10th Matric</span>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">Primary to Matric (Science &amp; Arts)</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+            Complete board preparation for Mathematics, Physics, Chemistry, Biology, Computer Science, English, Urdu, Pakistan Studies, and Islamiat across all Pakistani Boards.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div data-prog-cat="inter" class="program-card bg-white/90 dark:bg-slate-800/90 rounded-[24px] p-5 border border-slate-200/80 dark:border-slate-700 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-indigo-100 text-indigo-800 dark:bg-indigo-950 dark:text-indigo-300">Rs. 2,500 / Subject</span>
+            <span class="text-xs font-semibold text-slate-500">11th, 12th &amp; University BSc / BS</span>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">Inter to Graduation (All Subjects)</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+            F.Sc Pre-Engineering &amp; Pre-Medical, ICS, I.Com, FA, and Graduation (BSc / BS / BA) tutoring — including Calculus/Mathematics, Chemistry, Biology, Physics, English, and Food Science &amp; Technology.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div data-prog-cat="matric inter" class="program-card bg-white/90 dark:bg-slate-800/90 rounded-[24px] p-5 border border-slate-200/80 dark:border-slate-700 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300">GCSE / O &amp; A-Level</span>
+            <span class="text-xs font-semibold text-slate-500">Cambridge &amp; Edexcel</span>
+          </div>
+          <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">GCSE / O-Level &amp; A-Level Students Welcome</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+            Concept-focused tutoring, topical past paper practice, and personalized guidance for international curriculum students in Mathematics, Sciences, and English.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE ONLINE PLATFORMS & CHAKWAL ONSITE CLASSES -->
+    <section id="modes" class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      <!-- Live Online Platforms Card -->
+      <div class="lg:col-span-7 ios-glass rounded-[30px] p-6 sm:p-8 space-y-5">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400">
+          <i data-lucide="laptop" class="w-3.5 h-3.5"></i> LIVE INTERACTIVE ONLINE CLASSES
+        </div>
+        <h3 class="font-display font-extrabold text-xl sm:text-2xl text-slate-900 dark:text-white">
+          Study From Anywhere via Your Preferred App
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          We conduct live interactive classes, screen-shared concept explanations, digital whiteboard problem-solving, and assignment tracking across four convenient platforms:
+        </p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
+          <div class="p-3.5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700 text-center space-y-1.5">
+            <div class="w-10 h-10 mx-auto rounded-2xl bg-emerald-500/15 text-emerald-600 flex items-center justify-center">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+            </div>
+            <div class="font-bold text-xs text-slate-900 dark:text-white">WhatsApp</div>
+            <div class="text-[11px] text-slate-500">Live Video &amp; Notes</div>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700 text-center space-y-1.5">
+            <div class="w-10 h-10 mx-auto rounded-2xl bg-blue-500/15 text-blue-600 flex items-center justify-center">
+              <i data-lucide="video" class="w-5 h-5"></i>
+            </div>
+            <div class="font-bold text-xs text-slate-900 dark:text-white">Zoom</div>
+            <div class="text-[11px] text-slate-500">Whiteboard Classes</div>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700 text-center space-y-1.5">
+            <div class="w-10 h-10 mx-auto rounded-2xl bg-amber-500/15 text-amber-600 flex items-center justify-center">
+              <i data-lucide="monitor" class="w-5 h-5"></i>
+            </div>
+            <div class="font-bold text-xs text-slate-900 dark:text-white">Google Meet</div>
+            <div class="text-[11px] text-slate-500">HD Live Sessions</div>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700 text-center space-y-1.5">
+            <div class="w-10 h-10 mx-auto rounded-2xl bg-indigo-500/15 text-indigo-600 flex items-center justify-center">
+              <i data-lucide="folder-kanban" class="w-5 h-5"></i>
+            </div>
+            <div class="font-bold text-xs text-slate-900 dark:text-white">Google Classroom</div>
+            <div class="text-[11px] text-slate-500">Assignments &amp; Tests</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Onsite Classes Card (Chakwal City & Nearby Areas Only) -->
+      <div class="lg:col-span-5 ios-glass rounded-[30px] p-6 sm:p-8 flex flex-col justify-between border-2 border-emerald-500/40 relative overflow-hidden">
+        <div class="space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 text-emerald-700 dark:text-emerald-300">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> ONSITE IN-PERSON TUITION
+          </div>
+          <h3 class="font-display font-extrabold text-xl sm:text-2xl text-slate-900 dark:text-white">
+            Onsite Classes Exclusively for Chakwal City &amp; Nearby Areas
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            Students residing in <strong>Chakwal City and nearby areas</strong> can join face-to-face onsite classes with <strong>Miss Biya</strong> for personalized supervision, daily homework completion, and written test practice.
+          </p>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-200">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Separate Batches for Male &amp; Female Students</span></li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Safe, Focused &amp; Supportive Study Environment</span></li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Direct Contact: <strong>Miss Biya — 03219129313</strong></span></li>
+          </ul>
+        </div>
+
+        <div class="pt-5">
+          <a href="https://wa.me/message/2CDFXJEFHVRZJ1" target="_blank" rel="noopener noreferrer" class="w-full ios-whatsapp-btn text-white font-bold text-xs sm:text-sm py-3.5 px-5 rounded-2xl flex items-center justify-center gap-2">
+            <span>Whatsapp Us for Chakwal Onsite Timing</span>
+            <i data-lucide="chevron-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CONTACT & CTA CARD -->
+    <section class="ios-glass rounded-[32px] p-6 sm:p-10 text-center space-y-6">
+      <div class="max-w-2xl mx-auto space-y-3">
+        <span class="px-3.5 py-1 rounded-full text-xs font-bold bg-emerald-500/15 text-emerald-700 dark:text-emerald-300">
+          ✨ Your Class, Your Time, Your Choice!
+        </span>
+        <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-slate-900 dark:text-white">
+          Start Your Learning Journey with Miss Biya Today
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300">
+          Don't miss this opportunity! Improve your grades across all subjects from <strong>Nursery to Graduation</strong> from the comfort of your home or onsite in Chakwal.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <!-- Iconic Green iOS Button Titled "Whatsapp Us" -->
+        <a href="https://wa.me/message/2CDFXJEFHVRZJ1" target="_blank" rel="noopener noreferrer" class="ios-whatsapp-btn text-white font-display font-extrabold text-base sm:text-lg px-8 py-4 rounded-2xl inline-flex items-center gap-3">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.625.846 5.059 2.284 7.033l-1.494 4.462 4.614-1.466c1.912 1.252 4.195 1.971 6.596 1.971 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+          </svg>
+          <span>Whatsapp Us</span>
+        </a>
+
+        <a href="https://whatsapp.com/channel/0029VaizRAC2phHHB5HqNB2t" target="_blank" rel="noopener noreferrer" class="ios-blue-btn text-white font-display font-bold text-sm sm:text-base px-6 py-4 rounded-2xl inline-flex items-center gap-2">
+          <i data-lucide="bell" class="w-5 h-5"></i>
+          <span>Join WhatsApp Channel</span>
+        </a>
+      </div>
+
+      <div class="pt-2 flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm text-slate-600 dark:text-slate-300 font-semibold">
+        <span>👩‍🏫 Instructor: <strong>Miss Biya</strong></span>
+        <span>📲 WhatsApp / Call: <a href="tel:03219129313" class="text-blue-600 dark:text-blue-400 underline">03219129313</a></span>
+        <span>📍 Online (Worldwide) &amp; Onsite (Chakwal City)</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Mobile Bottom iOS Dock Bar -->
+  <div class="fixed bottom-3 inset-x-4 z-40 md:hidden">
+    <div class="ios-glass rounded-full p-2 px-3 flex items-center justify-between gap-2 shadow-2xl border border-white/80 dark:border-slate-700">
+      <div class="pl-2">
+        <div class="text-[10px] font-bold text-slate-500 dark:text-slate-400">Miss Biya</div>
+        <a href="tel:03219129313" class="text-xs font-extrabold text-slate-900 dark:text-white">03219129313</a>
+      </div>
+      <a href="https://wa.me/message/2CDFXJEFHVRZJ1" target="_blank" rel="noopener noreferrer" class="ios-whatsapp-btn text-white font-bold text-xs px-5 py-2.5 rounded-full inline-flex items-center gap-1.5">
+        <span>Whatsapp Us</span>
+        <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- iOS Toast Notification -->
+  <div id="iosToast" class="fixed top-20 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 -translate-y-2 transition-all duration-200">
+    <div class="bg-slate-900/95 text-white text-xs font-semibold px-4 py-2.5 rounded-full shadow-xl border border-white/15 flex items-center gap-2">
+      <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+      <span id="iosToastText">Copied to clipboard!</span>
+    </div>
+  </div>
+
+  <script>
+    // Initialize Lucide icons
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+
+    // Toast Helper
+    const toastEl = document.getElementById('iosToast');
+    const toastTextEl = document.getElementById('iosToastText');
+    let toastTimer = null;
+
+    function showToast(msg) {
+      toastTextEl.textContent = msg;
+      toastEl.classList.remove('opacity-0', '-translate-y-2');
+      toastEl.classList.add('opacity-100', 'translate-y-0');
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toastEl.classList.remove('opacity-100', 'translate-y-0');
+        toastEl.classList.add('opacity-0', '-translate-y-2');
+      }, 2600);
+    }
+
+    function copyTextSafe(text, successMsg) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(successMsg);
+        }).catch(() => fallbackCopy(text, successMsg));
+      } else {
+        fallbackCopy(text, successMsg);
+      }
+    }
+
+    function fallbackCopy(text, successMsg) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast(successMsg);
+      } catch (e) {
+        showToast('Ready: ' + text);
+      }
+      document.body.removeChild(ta);
+    }
+
+    // Theme toggle
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    themeToggleBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const isDark = document.documentElement.classList.contains('dark');
+      showToast(isDark ? 'iOS Dark Appearance Active' : 'iOS Light Appearance Active');
+    });
+
+    // Copy Phone buttons
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const val = btn.getAttribute('data-copy');
+        copyTextSafe(val, 'Copied Miss Biya Contact: ' + val);
+      });
+    });
+
+    // Miss Biya Profile Bio Tabs
+    const bioTabBtns = document.querySelectorAll('.bio-tab-btn');
+    const bioPanels = document.querySelectorAll('.bio-panel');
+    bioTabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-bio-tab');
+        bioTabBtns.forEach(b => {
+          b.classList.remove('bg-white', 'dark:bg-slate-700', 'text-slate-900', 'dark:text-white', 'shadow-sm');
+          b.classList.add('text-slate-600', 'dark:text-slate-300');
+        });
+        btn.classList.add('bg-white', 'dark:bg-slate-700', 'text-slate-900', 'dark:text-white', 'shadow-sm');
+        btn.classList.remove('text-slate-600', 'dark:text-slate-300');
+
+        bioPanels.forEach(p => p.classList.add('hidden'));
+        const panel = document.getElementById('bio-panel-' + target);
+        if (panel) panel.classList.remove('hidden');
+      });
+    });
+
+    // Programs Directory Filter
+    const progFilterBtns = document.querySelectorAll('.prog-filter-btn');
+    const progCards = document.querySelectorAll('.program-card');
+    progFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const cat = btn.getAttribute('data-prog-filter');
+        progFilterBtns.forEach(b => {
+          b.classList.remove('bg-white', 'dark:bg-slate-700', 'text-slate-900', 'dark:text-white', 'shadow-sm');
+          b.classList.add('text-slate-600', 'dark:text-slate-300');
+        });
+        btn.classList.add('bg-white', 'dark:bg-slate-700', 'text-slate-900', 'dark:text-white', 'shadow-sm');
+        btn.classList.remove('text-slate-600', 'dark:text-slate-300');
+
+        progCards.forEach(card => {
+          const cardCats = card.getAttribute('data-prog-cat') || '';
+          if (cat === 'all' || cardCats.includes(cat)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Interactive Tuition Fee Calculator State
+    const TIERS = {
+      nursery_primary: {
+        title: 'Nursery to Primary',
+        rate: 1000,
+        subjects: ['Mathematics', 'English', 'Urdu', 'General Science', 'Islamiat', 'Computer', 'Social Studies', 'Phonics & Reading'],
+        defaultSelected: ['Mathematics', 'English', 'Urdu']
+      },
+      primary_matric: {
+        title: 'Primary to Matric (Grades 6–10 / O-Level)',
+        rate: 1500,
+        subjects: ['Mathematics', 'Physics', 'Chemistry', 'Biology', 'Computer Science', 'English', 'Urdu', 'Pak Studies & Islamiat'],
+        defaultSelected: ['Mathematics', 'Physics']
+      },
+      inter_grad: {
+        title: 'Inter to Graduation (11th–12th / A-Level / BSc / BS)',
+        rate: 2500,
+        subjects: ['Mathematics / Calculus', 'Physics', 'Chemistry', 'Biology', 'English', 'Computer Science', 'Food Science & Tech', 'Statistics / Research'],
+        defaultSelected: ['Mathematics / Calculus', 'Chemistry']
+      }
+    };
+
+    let calcState = {
+      tierKey: 'primary_matric',
+      selectedSubjects: [...TIERS.primary_matric.defaultSelected],
+      mode: 'Live Online — Zoom / Google Meet',
+      batch: 'Female Students Separate Batch',
+      recordedService: false
+    };
+
+    const calcTierBtns = document.querySelectorAll('.calc-tier-btn');
+    const subjectChipsContainer = document.getElementById('subjectChipsContainer');
+    const selectedSubjectsCountBadge = document.getElementById('selectedSubjectsCountBadge');
+    const classModeSelect = document.getElementById('classModeSelect');
+    const batchTypeSelect = document.getElementById('batchTypeSelect');
+    const recordedServiceToggle = document.getElementById('recordedServiceToggle');
+    const summaryTierTitle = document.getElementById('summaryTierTitle');
+    const summaryRateText = document.getElementById('summaryRateText');
+    const summarySubjectsList = document.getElementById('summarySubjectsList');
+    const summaryModeText = document.getElementById('summaryModeText');
+    const summaryBatchText = document.getElementById('summaryBatchText');
+    const summaryRecordedRow = document.getElementById('summaryRecordedRow');
+    const summaryTotalAmount = document.getElementById('summaryTotalAmount');
+    const resetCalcBtn = document.getElementById('resetCalcBtn');
+    const copySummaryBtn = document.getElementById('copySummaryBtn');
+
+    function renderCalculator() {
+      const tier = TIERS[calcState.tierKey];
+
+      // Update Tier Buttons
+      calcTierBtns.forEach(btn => {
+        const key = btn.getAttribute('data-tier');
+        if (key === calcState.tierKey) {
+          btn.className = 'calc-tier-btn p-3.5 rounded-2xl border-2 text-left transition bg-blue-50/80 dark:bg-blue-950/50 border-blue-500';
+        } else {
+          btn.className = 'calc-tier-btn p-3.5 rounded-2xl border text-left transition bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700';
+        }
+      });
+
+      // Render Subject Chips
+      subjectChipsContainer.innerHTML = '';
+      tier.subjects.forEach(subj => {
+        const isSelected = calcState.selectedSubjects.includes(subj);
+        const chip = document.createElement('button');
+        chip.type = 'button';
+        chip.className = isSelected
+          ? 'px-3.5 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-sm transition flex items-center gap-1.5'
+          : 'px-3.5 py-2 rounded-xl text-xs font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-blue-400 transition flex items-center gap-1.5';
+        chip.innerHTML = `<span>${isSelected ? '✓ ' : '+ '}${subj}</span>`;
+        chip.addEventListener('click', () => {
+          if (calcState.selectedSubjects.includes(subj)) {
+            if (calcState.selectedSubjects.length > 1) {
+              calcState.selectedSubjects = calcState.selectedSubjects.filter(s => s !== subj);
+            } else {
+              showToast('At least 1 subject must be selected');
+            }
+          } else {
+            calcState.selectedSubjects.push(subj);
+          }
+          renderCalculator();
+        });
+        subjectChipsContainer.appendChild(chip);
+      });
+
+      const count = calcState.selectedSubjects.length;
+      selectedSubjectsCountBadge.textContent = `${count} subject${count > 1 ? 's' : ''} selected`;
+
+      // Update Receipt Summary
+      summaryTierTitle.textContent = tier.title;
+      summaryRateText.textContent = `Rs. ${tier.rate.toLocaleString()} / month`;
+      summarySubjectsList.textContent = calcState.selectedSubjects.join(', ');
+      summaryModeText.textContent = calcState.mode;
+      summaryBatchText.textContent = calcState.batch;
+
+      if (calcState.recordedService) {
+        summaryRecordedRow.classList.remove('hidden');
+        summaryRecordedRow.classList.add('flex');
+      } else {
+        summaryRecordedRow.classList.add('hidden');
+        summaryRecordedRow.classList.remove('flex');
+      }
+
+      const total = (count * tier.rate) + (calcState.recordedService ? 3000 : 0);
+      summaryTotalAmount.textContent = `Rs. ${total.toLocaleString()}`;
+    }
+
+    calcTierBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const newTier = btn.getAttribute('data-tier');
+        calcState.tierKey = newTier;
+        calcState.selectedSubjects = [...TIERS[newTier].defaultSelected];
+        renderCalculator();
+      });
+    });
+
+    // Pricing Card "Select in Fee Calculator" buttons
+    document.querySelectorAll('.tier-select-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tierKey = btn.getAttribute('data-select-tier');
+        if (TIERS[tierKey]) {
+          calcState.tierKey = tierKey;
+          calcState.selectedSubjects = [...TIERS[tierKey].defaultSelected];
+          renderCalculator();
+          const calcEl = document.getElementById('calculator');
+          if (calcEl) calcEl.scrollIntoView({ behavior: 'smooth' });
+          showToast(`Selected ${TIERS[tierKey].title} in Fee Calculator`);
+        }
+      });
+    });
+
+    classModeSelect.addEventListener('change', (e) => {
+      calcState.mode = e.target.value;
+      renderCalculator();
+    });
+
+    batchTypeSelect.addEventListener('change', (e) => {
+      calcState.batch = e.target.value;
+      renderCalculator();
+    });
+
+    recordedServiceToggle.addEventListener('change', (e) => {
+      calcState.recordedService = e.target.checked;
+      renderCalculator();
+    });
+
+    resetCalcBtn.addEventListener('click', () => {
+      calcState = {
+        tierKey: 'primary_matric',
+        selectedSubjects: [...TIERS.primary_matric.defaultSelected],
+        mode: 'Live Online — Zoom / Google Meet',
+        batch: 'Female Students Separate Batch',
+        recordedService: false
+      };
+      classModeSelect.value = 'Live Online (Zoom / Google Meet)';
+      batchTypeSelect.value = 'Female Students Separate Batch';
+      recordedServiceToggle.checked = false;
+      renderCalculator();
+      showToast('Fee Calculator reset');
+    });
+
+    copySummaryBtn.addEventListener('click', () => {
+      const tier = TIERS[calcState.tierKey];
+      const total = (calcState.selectedSubjects.length * tier.rate) + (calcState.recordedService ? 3000 : 0);
+      const summaryText =
+        `Assalam-o-Alaikum Miss Biya (03219129313)! I would like to enroll in your Tuition Academy:\n` +
+        `• Level: ${tier.title}\n` +
+        `• Subjects (${calcState.selectedSubjects.length}): ${calcState.selectedSubjects.join(', ')}\n` +
+        `• Mode: ${calcState.mode}\n` +
+        `• Batch: ${calcState.batch}\n` +
+        `• Recorded Lectures Package: ${calcState.recordedService ? 'Yes (+Rs. 3,000/mo)' : 'No'}\n` +
+        `• Estimated Monthly Fee: Rs. ${total.toLocaleString()}/month`;
+      copyTextSafe(summaryText, 'Enrollment summary copied! Paste it in WhatsApp.');
+    });
+
+    // Initial render
+    renderCalculator();
+  </script>
+</body>
+</html>
